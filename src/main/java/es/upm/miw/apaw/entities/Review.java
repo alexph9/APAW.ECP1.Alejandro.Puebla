@@ -1,10 +1,4 @@
 package es.upm.miw.apaw.entities;
-
-import lombok.Builder;
-import lombok.Data;
-
-@Data
-@Builder
 public class Review {
 
     private String id;
@@ -13,4 +7,29 @@ public class Review {
 
     private String description;
 
+    public Review(String id, boolean isNegative, String description) {
+        this.id = id;
+        this.isNegative = isNegative;
+        this.description = description;
+    }
+
+    public String getId() {
+        return id;
+    }
+
+    public boolean isNegative() {
+        return isNegative;
+    }
+
+    public void setNegative(boolean negative) {
+        isNegative = negative;
+    }
+
+    public String getDescription() {
+        return description;
+    }
+
+    public void setDescription(String description) {
+        this.description = description;
+    }
 }
