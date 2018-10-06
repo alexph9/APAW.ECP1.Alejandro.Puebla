@@ -4,16 +4,16 @@ import java.time.LocalDateTime;
 
 public class Download {
 
-    private Integer price;
+    private int price;
 
     private LocalDateTime date;
 
-    public Download(Integer price, LocalDateTime date) {
+    public Download(Integer price) {
         this.price = price;
-        this.date = date;
+        this.date = LocalDateTime.now();
     }
 
-    public Integer getPrice() {
+    public int getPrice() {
         return price;
     }
 
