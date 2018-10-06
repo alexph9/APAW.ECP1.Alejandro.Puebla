@@ -31,6 +31,6 @@ public class Artist {
     }
 
     public void setSoloSinger(boolean soloSinger) {
-        isSoloSinger = soloSinger;
+        this.isSoloSinger = soloSinger;
     }
 }
