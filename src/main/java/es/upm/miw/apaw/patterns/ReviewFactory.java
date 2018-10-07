@@ -4,8 +4,9 @@ import es.upm.miw.apaw.entities.Review;
 
 import java.util.HashMap;
 import java.util.Map;
+import java.util.Observable;
 
-public class ReviewFactory {
+public class ReviewFactory extends Observable {
 
     private static final ReviewFactory reviewFactory = new ReviewFactory();
 
@@ -21,6 +22,7 @@ public class ReviewFactory {
 
     public void setReview(Review review){
         reviews.put(review.getId(), review);
+        this.notifyObservers();
     }
 
     public Review getReview(String id){
