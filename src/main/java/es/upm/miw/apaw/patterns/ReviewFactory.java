@@ -21,8 +21,8 @@ public class ReviewFactory extends Observable {
     }
 
     public void setReview(Review review){
+        this.notifyObservers("I have a new Review!");
         reviews.put(review.getId(), review);
-        this.notifyObservers();
     }
 
     public Review getReview(String id){
