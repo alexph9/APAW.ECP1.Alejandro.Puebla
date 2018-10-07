@@ -24,4 +24,9 @@ public class SongComposite extends SongComponent {
     public void remove(SongComponent songComponent) {
         songComponentList.remove(songComponent);
     }
+
+    @Override
+    public String view() {
+        return null;
+    }
 }

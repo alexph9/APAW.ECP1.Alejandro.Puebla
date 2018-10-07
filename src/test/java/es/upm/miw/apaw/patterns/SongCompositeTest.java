@@ -38,5 +38,6 @@ public class SongCompositeTest {
     void testSongLeaf(){
         assertEquals(false, song.isComposite());
         assertNotNull(song.getSong());
+        assertEquals("1", song.view());
     }
 }
