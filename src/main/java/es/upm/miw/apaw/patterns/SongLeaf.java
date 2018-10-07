@@ -7,7 +7,7 @@ public class SongLeaf extends SongComponent {
     private Song song;
 
     public SongLeaf(Song song){
-        super(song.getId());
+        super(song.getGenre());
         this.song = song;
     }
 
