@@ -12,28 +12,28 @@ El patrón Estrategia (Strategy) es un patrón de diseño para el desarrollo de 
 Encapsula algoritmos en clases, permitiendo que éstos sean re-utilizados e intercambiables. En base a un parámetro, que puede ser cualquier objeto, permite a una aplicación decidir en tiempo de ejecución el algoritmo que debe ejecutar.
 La esencia de este patrón es encapsular algoritmos relacionados que son subclases de una superclase común, lo que permite la selección de un algoritmo que varia según el objeto y también le permite la variación en el tiempo.
 
-######Este patrón debe utilizarse cuando:
+###### Este patrón debe utilizarse cuando:
 
 * Un programa tiene que proporcionar múltiples variantes de un algoritmo o comportamiento.
 
 * Encapsula algoritmos en clases, permitiendo que éstos sean re-utilizados e intercambiables. En base a un parámetro, que puede ser cualquier objeto, permite a una aplicación decidir en tiempo de ejecución el algoritmo que debe ejecutar.
   La esencia de este patrón es encapsular algoritmos relacionados que son subclases de una superclase común, lo que permite la selección de un algoritmo que varia según el objeto y también le permite la variación en el tiempo.
 
-*Encapsula algoritmos en clases, permitiendo que éstos sean re-utilizados e intercambiables. En base a un parámetro, que puede ser cualquier objeto, permite a una aplicación decidir en tiempo de ejecución el algoritmo que debe ejecutar.
+* Encapsula algoritmos en clases, permitiendo que éstos sean re-utilizados e intercambiables. En base a un parámetro, que puede ser cualquier objeto, permite a una aplicación decidir en tiempo de ejecución el algoritmo que debe ejecutar.
  La esencia de este patrón es encapsular algoritmos relacionados que son subclases de una superclase común, lo que permite la selección de un algoritmo que varia según el objeto y también le permite la variación en el tiempo.
 
 ![Strategy Pattern](https://github.com/alexph9/APAW.ECP1.Alejandro.Puebla/blob/master/docs/general-strategy-pattern.png)
 
-######Ejemplo a realizar para el patrón Estrategia
+###### Ejemplo a realizar para el patrón Estrategia
 
 Queremos desarrollar un traductor que de momento nos salude en inglés, español e italiano. Aunque en un futuro
 nos gustaría que el traductor esté disponible en diversos idiomas. Para ello vamos a utilizar el patrón Estrategia ya que nos permite realizar esta acción.
 
-*Interfaz Language: Define el método saludar (greet)
+* Interfaz Language: Define el método saludar (greet)
 
-*Traductor: Es la clase encargada de escribir el saludo además se podrá elegir la estrategia que se quiere utilizar.
+* Traductor: Es la clase encargada de escribir el saludo además se podrá elegir la estrategia que se quiere utilizar.
 
-*English, Italian and Spanish classes: Implementan el método saludar de Language cada uno con su propia lógica.
+* English, Italian and Spanish classes: Implementan el método saludar de Language cada uno con su propia lógica.
 
 ## Estado del código
 
