@@ -5,7 +5,7 @@
 
 ##### Entidades
 
-![](.\docs\Entities.png)
+![Mis entidades](.\docs\Entities.png)
 
 ### Estado del código
 
