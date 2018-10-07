@@ -2,10 +2,10 @@ package es.upm.miw.apaw.patterns;
 
 public abstract class SongComponent {
 
-    private String name;
+    private String id;
 
-    public SongComponent(String name){
-        this.name = name;
+    public SongComponent(String id){
+        this.id = id;
     }
 
     public abstract boolean isComposite();

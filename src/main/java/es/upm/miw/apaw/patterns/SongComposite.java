@@ -7,8 +7,8 @@ public class SongComposite extends SongComponent {
 
     List<SongComponent> songComponentList;
 
-    public SongComposite(String name){
-        super(name);
+    public SongComposite(String id){
+        super(id);
         songComponentList = new ArrayList<>();
     }
 
