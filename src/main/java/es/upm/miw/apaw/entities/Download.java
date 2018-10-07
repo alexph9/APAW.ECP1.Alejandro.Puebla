@@ -1,16 +1,24 @@
 package es.upm.miw.apaw.entities;
 
-import lombok.Builder;
-import lombok.Data;
-
 import java.time.LocalDateTime;
 
-@Data
-@Builder
 public class Download {
 
-    private Integer price;
+    private int price;
 
     private LocalDateTime date;
+
+    public Download(Integer price) {
+        this.price = price;
+        this.date = LocalDateTime.now();
+    }
+
+    public int getPrice() {
+        return price;
+    }
+
+    public LocalDateTime getDate() {
+        return date;
+    }
 
 }

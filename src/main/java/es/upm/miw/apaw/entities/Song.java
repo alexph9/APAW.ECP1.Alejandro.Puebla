@@ -1,18 +1,13 @@
 package es.upm.miw.apaw.entities;
 
-import lombok.Builder;
-import lombok.Data;
-
 import java.time.LocalDateTime;
 import java.util.List;
 
-@Data
-@Builder
 public class Song {
 
     private String id;
 
-    private String duration;
+    private String name;
 
     private LocalDateTime date;
 
@@ -22,4 +17,51 @@ public class Song {
 
     private List<Download> downloads;
 
+    public Song(String id, String name, Artist artist, Genre genre) {
+        this.id = id;
+        this.name = name;
+        this.date = LocalDateTime.now();
+        this.artist = artist;
+        this.genre = genre;
+    }
+
+    public String getId() {
+        return id;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public LocalDateTime getDate() {
+        return date;
+    }
+
+    public Artist getArtist() {
+        return artist;
+    }
+
+    public String getGenre() {
+        return genre.toString();
+    }
+
+    public void setArtist(Artist artist) {
+        this.artist = artist;
+    }
+
+    public void setGenre(Genre genre) {
+        this.genre = genre;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public List<Download> getDownloads() {
+        return downloads;
+    }
+
+    public void addDownload(Download download){
+        this.downloads.add(download);
+    }
 }

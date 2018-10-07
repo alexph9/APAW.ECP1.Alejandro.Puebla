@@ -1,10 +1,5 @@
 package es.upm.miw.apaw.entities;
 
-import lombok.Builder;
-import lombok.Data;
-
-@Data
-@Builder
 public class Artist {
 
     private String id;
@@ -13,4 +8,29 @@ public class Artist {
 
     private boolean isSoloSinger;
 
+    public Artist(String id, String name, boolean isSoloSinger) {
+        this.id = id;
+        this.name = name;
+        this.isSoloSinger = isSoloSinger;
+    }
+
+    public String getId() {
+        return id;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public boolean isSoloSinger() {
+        return isSoloSinger;
+    }
+
+    public void setSoloSinger(boolean soloSinger) {
+        this.isSoloSinger = soloSinger;
+    }
 }
